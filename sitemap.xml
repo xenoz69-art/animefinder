@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://anime.chielzshell.web.id/</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://anime.chielzshell.web.id/about.html</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://anime.chielzshell.web.id/contact.html</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://anime.chielzshell.web.id/privacy.html</loc>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://anime.chielzshell.web.id/terms.html</loc>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://anime.chielzshell.web.id/disclaimer.html</loc>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>
