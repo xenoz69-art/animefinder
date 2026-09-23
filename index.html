@@ -28,6 +28,7 @@
     <link
         rel="canonical"
         href="https://anime.chielzshell.web.id/"
+    >
 
     <link 
         rel="icon" 
@@ -65,6 +66,33 @@
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4319137965038163"
          crossorigin="anonymous"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebApplication",
+      "name":"AnimeFinder",
+      "url":"https://anime.chielzshell.web.id/",
+      "applicationCategory":"EntertainmentApplication",
+      "operatingSystem":"Any",
+      "description":"Alat pencarian dan identifikasi anime berdasarkan nama atau screenshot adegan.",
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Apakah AnimeFinder merupakan situs streaming anime?","acceptedAnswer":{"@type":"Answer","text":"Tidak. AnimeFinder adalah alat pencarian dan identifikasi anime dan tidak menyediakan file video anime."}},
+        {"@type":"Question","name":"Apakah saya bisa mencari anime hanya dari screenshot?","acceptedAnswer":{"@type":"Answer","text":"Ya. Pengguna dapat mengunggah screenshot yang jelas melalui fitur pencarian gambar."}},
+        {"@type":"Question","name":"Dari mana data anime berasal?","acceptedAnswer":{"@type":"Answer","text":"Informasi katalog berasal dari AniList dan pencarian adegan gambar menggunakan trace.moe."}}
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -89,13 +117,11 @@
             </span>
         </a>
 
-        <button
-            id="githubBtn"
-            class="github-btn"
-            type="button"
-        >
-            GitHub
-        </button>
+        <nav class="top-nav" aria-label="Navigasi utama">
+            <a href="#how-it-works">Cara Kerja</a>
+            <a href="#faq">FAQ</a>
+            <a href="guide.html">Panduan</a>
+        </nav>
 
     </header>
 
@@ -314,6 +340,164 @@
             </p>
 
         </div>
+
+
+
+
+        <!-- =================================
+             ORIGINAL CONTENT / USER GUIDE
+        ================================== -->
+
+        <section class="seo-content" aria-labelledby="about-tool-title">
+            <div class="seo-content-inner">
+                <span class="home-eyebrow">Tentang AnimeFinder</span>
+                <h2 id="about-tool-title">Mesin pencari anime untuk menemukan judul yang kamu ingat</h2>
+                <p>
+                    AnimeFinder adalah alat pencarian dan identifikasi anime yang membantu pengguna
+                    menemukan judul berdasarkan nama maupun screenshot sebuah adegan. Situs ini dibuat
+                    untuk situasi ketika kamu mengingat karakter, judul sebagian, atau hanya memiliki
+                    satu gambar dari anime tetapi tidak mengetahui judulnya.
+                </p>
+                <p>
+                    Berbeda dari katalog streaming, AnimeFinder tidak menyediakan atau meng-host video
+                    anime. Fokus layanan ini adalah membantu menemukan informasi anime yang relevan,
+                    seperti judul alternatif, sinopsis, genre, jumlah episode, status tayang, musim,
+                    skor, dan hasil pencocokan adegan. Data katalog ditampilkan dari AniList, sedangkan
+                    pencarian berdasarkan gambar diproses melalui trace.moe.
+                </p>
+                <div class="value-grid">
+                    <article class="value-card">
+                        <span class="value-number">01</span>
+                        <h3>Pencarian nama</h3>
+                        <p>Ketik judul atau kata kunci anime untuk melihat beberapa hasil yang paling relevan.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-number">02</span>
+                        <h3>Pencarian screenshot</h3>
+                        <p>Unggah gambar adegan dan gunakan pencocokan visual untuk mempersempit kemungkinan judul.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-number">03</span>
+                        <h3>Detail yang mudah dibaca</h3>
+                        <p>Buka kartu anime untuk melihat informasi penting tanpa harus mencari ulang di banyak halaman.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-content seo-content-alt" id="how-it-works" aria-labelledby="how-title">
+            <div class="seo-content-inner">
+                <span class="home-eyebrow">Cara Kerja</span>
+                <h2 id="how-title">Bagaimana AnimeFinder menemukan anime?</h2>
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">1</span>
+                        <div>
+                            <h3>Pilih metode pencarian</h3>
+                            <p>Gunakan pencarian nama jika kamu mengetahui judul atau kata kuncinya. Gunakan pencarian gambar jika yang kamu punya adalah screenshot adegan.</p>
+                        </div>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">2</span>
+                        <div>
+                            <h3>Permintaan diproses</h3>
+                            <p>Pencarian nama dikirim ke AniList. Screenshot dikirim ke layanan trace.moe untuk mendapatkan kecocokan adegan dan perkiraan sumber anime.</p>
+                        </div>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">3</span>
+                        <div>
+                            <h3>Periksa hasil</h3>
+                            <p>Bandingkan judul, gambar, genre, episode, musim, status, dan informasi lain sebelum membuka detail anime.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="note-box">
+                    <strong>Tips pencarian gambar:</strong>
+                    gunakan screenshot yang menampilkan karakter atau latar dengan jelas, hindari gambar
+                    yang terlalu kecil atau tertutup teks, dan coba screenshot lain jika hasil pertama tidak sesuai.
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-content" aria-labelledby="data-title">
+            <div class="seo-content-inner two-column-content">
+                <div>
+                    <span class="home-eyebrow">Memahami Hasil</span>
+                    <h2 id="data-title">Informasi apa yang tersedia?</h2>
+                    <p>
+                        Setiap anime dapat memiliki lebih dari satu judul. AnimeFinder menampilkan judul
+                        romaji, Inggris, atau judul asli yang tersedia agar pengguna dapat mengenali seri
+                        yang dicari meskipun nama yang diingat berbeda.
+                    </p>
+                    <p>
+                        Kartu hasil juga dapat menampilkan tahun, jumlah episode, format, genre, status,
+                        dan skor. Nilai tersebut berasal dari data layanan pihak ketiga dan dapat berubah
+                        ketika sumber memperbarui katalognya.
+                    </p>
+                </div>
+                <div class="info-list">
+                    <div><strong>Format</strong><span>TV, Movie, OVA, ONA, Special, dan format lain yang tersedia.</span></div>
+                    <div><strong>Status</strong><span>Contohnya Finished Airing, Currently Airing, atau Not Yet Released.</span></div>
+                    <div><strong>Genre</strong><span>Kategori seperti Action, Comedy, Drama, Fantasy, Romance, dan lainnya.</span></div>
+                    <div><strong>Score</strong><span>Skor komunitas yang tersedia dari katalog AniList, bukan penilaian buatan AnimeFinder.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-content seo-content-alt" id="faq" aria-labelledby="faq-title">
+            <div class="seo-content-inner">
+                <span class="home-eyebrow">Pertanyaan Umum</span>
+                <h2 id="faq-title">FAQ AnimeFinder</h2>
+                <div class="faq-list">
+                    <details>
+                        <summary>Apakah AnimeFinder merupakan situs streaming anime?</summary>
+                        <p>Tidak. AnimeFinder adalah alat pencarian dan identifikasi anime. Situs ini tidak menyediakan file video anime untuk ditonton atau diunduh.</p>
+                    </details>
+                    <details>
+                        <summary>Apakah saya bisa mencari anime hanya dari screenshot?</summary>
+                        <p>Ya. Pilih tab Cari dengan Gambar, unggah screenshot yang jelas, lalu jalankan pencarian gambar. Hasil bergantung pada kemampuan pencocokan layanan trace.moe.</p>
+                    </details>
+                    <details>
+                        <summary>Dari mana data anime berasal?</summary>
+                        <p>Informasi katalog anime berasal dari AniList. Pencarian adegan berdasarkan gambar menggunakan trace.moe. AnimeFinder menggabungkan hasil tersebut ke dalam antarmuka pencarian.</p>
+                    </details>
+                    <details>
+                        <summary>Mengapa hasil pencarian gambar bisa salah?</summary>
+                        <p>Pencarian gambar adalah pencocokan visual. Screenshot yang buram, terpotong, terlalu kecil, atau tidak berasal dari adegan yang dikenali dapat menghasilkan kecocokan yang kurang tepat.</p>
+                    </details>
+                    <details>
+                        <summary>Apakah AnimeFinder gratis?</summary>
+                        <p>Fitur pencarian yang tersedia di situs dapat digunakan tanpa biaya. Ketersediaan layanan tetap bergantung pada layanan API pihak ketiga yang digunakan untuk memproses permintaan.</p>
+                    </details>
+                    <details>
+                        <summary>Apakah screenshot saya disimpan oleh AnimeFinder?</summary>
+                        <p>AnimeFinder tidak menyediakan penyimpanan galeri screenshot pengguna. Gambar untuk pencarian dikirim ke layanan pencocokan pihak ketiga sebagaimana dijelaskan dalam Kebijakan Privasi.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-content" aria-labelledby="source-title">
+            <div class="seo-content-inner source-section">
+                <span class="home-eyebrow">Sumber &amp; Transparansi</span>
+                <h2 id="source-title">Sumber data AnimeFinder</h2>
+                <p>
+                    AnimeFinder tidak mengklaim kepemilikan atas data katalog, poster, judul, atau materi
+                    anime yang ditampilkan. Layanan ini menggunakan sumber pihak ketiga untuk membantu
+                    pengguna menemukan informasi dan mengidentifikasi adegan.
+                </p>
+                <div class="source-links">
+                    <a href="https://anilist.co/" target="_blank" rel="noopener noreferrer"><strong>AniList</strong><span>Database anime dan informasi katalog.</span></a>
+                    <a href="https://trace.moe/" target="_blank" rel="noopener noreferrer"><strong>trace.moe</strong><span>Pencarian anime berdasarkan screenshot adegan.</span></a>
+                </div>
+                <p class="small-note">
+                    Jika informasi pada hasil berbeda dari sumber aslinya, pengguna dapat memeriksa sumber
+                    terkait karena data pihak ketiga dapat diperbarui atau berubah dari waktu ke waktu.
+                </p>
+                <a class="guide-link" href="guide.html">Baca panduan lengkap menggunakan AnimeFinder →</a>
+            </div>
+        </section>
 
 
         <!-- =================================
