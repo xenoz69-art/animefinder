@@ -69,7 +69,7 @@ const homeSectionIds = [
 /*
  * Awalnya Home berada setelah Hero.
  * Ketika pencarian dilakukan, Home dipindahkan
- * ke bagian paling bawah setelah hasil pencarian.
+ * to the very bottom after the search results.
  */
 function moveHomeToBottom() {
     const main = document.querySelector("main");
@@ -459,8 +459,8 @@ async function searchAnime() {
     if (!query) {
 
         showError(
-            "Pencarian kosong",
-            "Masukkan nama anime terlebih dahulu."
+            "Empty search",
+            "Enter an anime name first."
         );
 
         return;
@@ -468,7 +468,7 @@ async function searchAnime() {
 
     /*
      * Pindahkan Trending / Popular / Recent
-     * ke bawah hasil pencarian.
+     * below the search results.
      */
     moveHomeToBottom();
 
@@ -488,7 +488,7 @@ async function searchAnime() {
 
     setLoading(
         true,
-        `Mencari anime "${query}"...`
+        `Searching for "${query}"...`
     );
 
     try {
@@ -594,7 +594,7 @@ async function searchAniList(query) {
 
                 setLoading(
                     true,
-                    `Mencoba lagi... ${attempt + 1}/3`
+                    `Retrying... ${attempt + 1}/3`
                 );
 
                 await sleep(
@@ -629,7 +629,7 @@ function renderAnimeResults(
 
     if (resultTitle) {
         resultTitle.textContent =
-            `Hasil untuk "${query}"`;
+            `Results for "${query}"`;
     }
 
     if (resultCount) {
@@ -640,8 +640,8 @@ function renderAnimeResults(
     if (!animes.length) {
 
         showEmpty(
-            "Anime tidak ditemukan",
-            "Coba gunakan judul lain atau nama alternatif."
+            "No anime found",
+            "Try another title or an alternative name."
         );
 
         return;
@@ -881,8 +881,8 @@ function handleImageSelect() {
     if (!file.type.startsWith("image/")) {
 
         showError(
-            "File tidak valid",
-            "Pilih gambar JPG, PNG, WEBP, atau GIF."
+            "Invalid file",
+            "Choose a JPG, PNG, WEBP, or GIF image."
         );
 
         resetImage();
@@ -896,8 +896,8 @@ function handleImageSelect() {
     ) {
 
         showError(
-            "Gambar terlalu besar",
-            "Ukuran screenshot maksimal 12 MB."
+            "Image too large",
+            "Screenshots must be under 12 MB."
         );
 
         resetImage();
@@ -941,8 +941,8 @@ function handleImageSelect() {
     reader.onerror = () => {
 
         showError(
-            "Gagal membaca gambar",
-            "Coba pilih screenshot lain."
+            "Failed to read image",
+            "Try another screenshot."
         );
 
         resetImage();
@@ -970,15 +970,15 @@ async function searchByImage() {
     if (!selectedImage) {
 
         showError(
-            "Gambar belum dipilih",
-            "Upload screenshot anime terlebih dahulu."
+            "No image selected",
+            "Upload an anime screenshot first."
         );
 
         return;
     }
 
     /*
-     * Pindahkan Home ke bawah sebelum
+     * Move Home below before
      * hasil pencarian gambar ditampilkan.
      */
     moveHomeToBottom();
@@ -1011,7 +1011,7 @@ async function searchByImage() {
 
     setLoading(
         true,
-        "Menganalisis screenshot..."
+        "Analyzing screenshot..."
     );
 
     try {
@@ -1071,8 +1071,8 @@ async function searchByImage() {
         if (!items.length) {
 
             showEmpty(
-                "Anime tidak ditemukan",
-                "Screenshot tidak memiliki adegan yang cocok."
+                "No anime found",
+                "The screenshot has no matching scene."
             );
 
             return;
@@ -1089,7 +1089,7 @@ async function searchByImage() {
 
         setLoading(
             true,
-            "Mengambil nama anime..."
+            "Fetching anime titles..."
         );
 
         const enriched =
@@ -1109,7 +1109,7 @@ async function searchByImage() {
         );
 
         showError(
-            "Pencarian gambar gagal",
+            "Image search failed",
             readableTraceError(error)
         );
 
@@ -1333,8 +1333,8 @@ function renderTraceResults(
     if (!items.length) {
 
         showEmpty(
-            "Anime tidak ditemukan",
-            "Tidak ada hasil yang cocok."
+            "No anime found",
+            "No matching results."
         );
 
         return;
@@ -1349,7 +1349,7 @@ function renderTraceResults(
     if (resultTitle) {
 
         resultTitle.textContent =
-            "Anime yang ditemukan";
+            "Anime found";
     }
 
     if (resultCount) {
@@ -1406,7 +1406,7 @@ function createTraceCard(item) {
             ? getTitle(anime)
             : (
                 item.title ||
-                "Anime tidak diketahui"
+                "Unknown anime"
             );
 
     const romaji =
@@ -1627,7 +1627,7 @@ function createTraceCard(item) {
                                 class="trace-detail-btn"
                                 data-id="${anilistId}"
                             >
-                                Detail Anime
+                                Anime Details
                             </button>
                         `
                         : ""
@@ -1726,7 +1726,7 @@ async function showAnimeById(
 
     setLoading(
         true,
-        "Mengambil detail anime..."
+        "Fetching anime details..."
     );
 
     try {
@@ -1741,7 +1741,7 @@ async function showAnimeById(
         console.error(error);
 
         showError(
-            "Gagal mengambil detail",
+            "Failed to load details",
             readableError(error)
         );
 
@@ -1808,7 +1808,7 @@ async function getAnimeById(
     if (!anime) {
 
         throw new Error(
-            "Anime tidak ditemukan."
+            "Anime not found."
         );
 
     }
@@ -1843,7 +1843,7 @@ function showAnimeDetail(
         cleanDescription(
             anime.description
         ) ||
-        "Sinopsis tidak tersedia.";
+        "Synopsis unavailable.";
 
     const score =
         getScore(
@@ -1935,13 +1935,13 @@ function showAnimeDetail(
                     )}
 
                     ${createStat(
-                        "Tahun",
+                        "Year",
                         anime.seasonYear ||
                         "N/A"
                     )}
 
                     ${createStat(
-                        "Durasi",
+                        "Duration",
                         anime.duration
                             ? `${anime.duration} min`
                             : "N/A"
@@ -1960,7 +1960,7 @@ function showAnimeDetail(
                 </div>
 
                 <h4 class="modal-section-title">
-                    Sinopsis
+                    Synopsis
                 </h4>
 
                 <p class="modal-description">
@@ -1980,7 +1980,7 @@ function showAnimeDetail(
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Buka AniList ↗
+                                Open AniList ↗
                             </a>
                         `
                         : ""
@@ -2466,26 +2466,26 @@ function readableError(
         )
     ) {
 
-        return "Request terlalu lama. Coba lagi.";
+        return "Request timed out. Try again.";
     }
 
     if (
         message.includes("429")
     ) {
 
-        return "Terlalu banyak request. Tunggu sebentar.";
+        return "Too many requests. Please wait a moment.";
     }
 
     if (
         error instanceof TypeError
     ) {
 
-        return "Tidak dapat terhubung ke AniList. Periksa koneksi internet.";
+        return "Cannot reach AniList. Check your internet connection.";
     }
 
     return (
         message ||
-        "Terjadi kesalahan. Coba lagi."
+        "Something went wrong. Try again."
     );
 }
 
@@ -2505,33 +2505,33 @@ function readableTraceError(
         )
     ) {
 
-        return "Analisis screenshot terlalu lama. Coba gambar yang lebih kecil.";
+        return "Screenshot analysis took too long. Try a smaller image.";
     }
 
     if (
         message.includes("429")
     ) {
 
-        return "Terlalu banyak pencarian gambar. Tunggu sebentar.";
+        return "Too many image searches. Please wait a moment.";
     }
 
     if (
         message.includes("413")
     ) {
 
-        return "Ukuran screenshot terlalu besar.";
+        return "Screenshot is too large.";
     }
 
     if (
         error instanceof TypeError
     ) {
 
-        return "Tidak dapat terhubung ke trace.moe.";
+        return "Cannot reach trace.moe.";
     }
 
     return (
         message ||
-        "Screenshot tidak dapat dianalisis."
+        "Screenshot could not be analyzed."
     );
 }
 
@@ -2541,16 +2541,15 @@ function scrollToElement(
 
     if (!element) return;
 
-    setTimeout(
+    requestAnimationFrame(
         () => {
 
             element.scrollIntoView({
-                behavior: "smooth",
+                behavior: "instant",
                 block: "start"
             });
 
-        },
-        100
+        }
     );
 }
 
@@ -2681,9 +2680,9 @@ function renderHomeSection(
         (anime) => {
 
             /*
-             * createAnimeCard() sudah mempunyai
-             * event click untuk membuka detail.
-             * Tidak perlu event click kedua.
+             * createAnimeCard() already has
+             * a click event to open details.
+             * No second click event needed.
              */
             grid.appendChild(
                 createAnimeCard(anime)
@@ -2705,3 +2704,117 @@ document.addEventListener(
 
     }
 );
+/* =========================================
+   POPULAR SEARCHES
+========================================= */
+
+document
+    .querySelectorAll(
+        ".popular-chip"
+    )
+    .forEach((chip) => {
+
+        chip.addEventListener(
+            "click",
+            () => {
+
+                const query =
+                    chip.dataset.query ||
+                    "";
+
+                if (
+                    !query ||
+                    !searchInput
+                ) {
+                    return;
+                }
+
+                searchInput.value =
+                    query;
+
+                searchAnime();
+
+            }
+        );
+
+    });
+
+/* =========================================
+   COOKIE CONSENT
+========================================= */
+
+(function initCookieConsent() {
+
+    const KEY =
+        "animefinder_cookie_choice";
+
+    const banner =
+        $("cookieBanner");
+
+    const acceptBtn =
+        $("cookieAccept");
+
+    const declineBtn =
+        $("cookieDecline");
+
+    if (!banner) return;
+
+    let choice = null;
+
+    try {
+
+        choice =
+            localStorage.getItem(
+                KEY
+            );
+
+    } catch (error) {
+        /* storage unavailable — show banner every visit */
+    }
+
+    if (!choice) {
+
+        banner.classList.remove(
+            "hidden"
+        );
+
+    }
+
+    function save(value) {
+
+        try {
+
+            localStorage.setItem(
+                KEY,
+                value
+            );
+
+        } catch (error) {
+            /* ignore */
+        }
+
+        banner.classList.add(
+            "hidden"
+        );
+
+    }
+
+    if (acceptBtn) {
+
+        acceptBtn.addEventListener(
+            "click",
+            () => save("accepted")
+        );
+
+    }
+
+    if (declineBtn) {
+
+        declineBtn.addEventListener(
+            "click",
+            () => save("declined")
+        );
+
+    }
+
+})();

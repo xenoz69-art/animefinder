@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -15,7 +15,7 @@
 
     <meta
         name="description"
-        content="Hubungi tim AnimeFinder untuk pertanyaan, saran, atau laporan masalah."
+        content="Contact the AnimeFinder team for questions, suggestions, or issue reports."
     >
 
     <title>Contact — AnimeFinder</title>
@@ -48,10 +48,10 @@
             </span>
         </a>
 
-        <nav class="top-nav" aria-label="Navigasi utama">
-            <a href="index.html">Beranda</a>
-            <a href="guide.html">Panduan</a>
-            <a href="contact.html">Kontak</a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="guide.html">Guide</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
     </header>
@@ -66,22 +66,22 @@
         <div class="page-wrap">
 
             <a href="index.html" class="page-back">
-                ← Kembali ke Beranda
+                ← Back to Home
             </a>
 
             <div class="page-header">
                 <span class="page-eyebrow">Get in touch</span>
                 <h1>Contact</h1>
                 <span class="page-updated">
-                    Ada pertanyaan, masukan, atau menemukan bug?
-                    Kami senang mendengarnya.
+                    Questions, feedback, or found a bug?
+                    We'd love to hear from you.
                 </span>
             </div>
 
             <div class="page-body">
 
                 <section>
-                    <h2>Hubungi Kami</h2>
+                    <h2>Get In Touch</h2>
 
                     <div class="contact-grid">
 
@@ -102,7 +102,7 @@
                         >
                             <div class="contact-icon">⌥</div>
                             <strong>GitHub</strong>
-                            <span>Laporkan bug / kontribusi</span>
+                            <span>Report bugs / contribute</span>
                         </a>
 
                         <a
@@ -110,20 +110,19 @@
                             href="#"
                         >
                             <div class="contact-icon">💬</div>
-                            <strong>Komunitas</strong>
-                            <span>Diskusi &amp; saran fitur</span>
+                            <strong>Community</strong>
+                            <span>Discussion &amp; feature suggestions</span>
                         </a>
 
                     </div>
                 </section>
 
                 <section>
-                    <h2>Kirim Pesan</h2>
+                    <h2>Send a Message</h2>
 
                     <p>
-                        Isi formulir di bawah ini — aplikasi email
-                        default Anda akan terbuka dengan pesan yang
-                        sudah terisi otomatis.
+                        Fill in the form below — your default email
+                        app will open with a pre-filled message.
                     </p>
 
                     <form
@@ -134,7 +133,7 @@
                         <input
                             id="contactName"
                             type="text"
-                            placeholder="Nama Anda"
+                            placeholder="Your name"
                             required
                             style="min-height:46px; padding:0 16px; border-radius:11px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); font-size:14px;"
                         >
@@ -142,14 +141,14 @@
                         <input
                             id="contactEmail"
                             type="email"
-                            placeholder="Email Anda"
+                            placeholder="Your email"
                             required
                             style="min-height:46px; padding:0 16px; border-radius:11px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); font-size:14px;"
                         >
 
                         <textarea
                             id="contactMessage"
-                            placeholder="Tulis pesan Anda di sini..."
+                            placeholder="Write your message here..."
                             required
                             rows="5"
                             style="padding:14px 16px; border-radius:11px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); font-size:14px; font-family:inherit; resize:vertical;"
@@ -159,7 +158,7 @@
                             type="submit"
                             style="align-self:flex-start; min-height:46px; padding:0 24px; border-radius:11px; border:none; background:var(--yellow); color:#000; font-weight:800; font-size:14px; cursor:pointer;"
                         >
-                            Kirim Pesan
+                            Send Message
                         </button>
 
                     </form>
@@ -187,7 +186,7 @@
             &amp; trace.moe
         </span>
 
-        <nav class="footer-links" aria-label="Tautan footer">
+        <nav class="footer-links" aria-label="Footer links">
             <a href="about.html">About Us</a>
             <span class="dot">•</span>
             <a href="contact.html">Contact</a>
@@ -218,7 +217,7 @@
                 var email = document.getElementById("contactEmail").value;
                 var message = document.getElementById("contactMessage").value;
 
-                var subject = encodeURIComponent("Pesan dari " + name + " — AnimeFinder");
+                var subject = encodeURIComponent("Message from " + name + " — AnimeFinder");
                 var body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
 
                 window.location.href = "mailto:support@chielzshell.web.id?subject=" + subject + "&body=" + body;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -17,7 +17,7 @@
 
     <meta
         name="description"
-        content="AnimeFinder adalah mesin pencari anime untuk mencari anime berdasarkan nama atau screenshot dengan AniList dan trace.moe."
+        content="AnimeFinder is an anime search engine to find anime by name or screenshot, powered by AniList and trace.moe."
     >
 
     <meta
@@ -39,14 +39,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://anime.chielzshell.web.id/">
     <meta property="og:title" content="AnimeFinder — Anime Search">
-    <meta property="og:description" content="Cari anime berdasarkan nama atau screenshot dengan AnimeFinder.">
+    <meta property="og:description" content="Search anime by name or screenshot with AnimeFinder.">
     <meta property="og:site_name" content="AnimeFinder">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="AnimeFinder — Anime Search">
-    <meta name="twitter:description" content="Cari anime berdasarkan nama atau screenshot dengan AnimeFinder.">
+    <meta name="twitter:description" content="Search anime by name or screenshot with AnimeFinder.">
 
-    <title>AnimeFinder — Cari Anime Berdasarkan Nama atau Screenshot</title>
+    <title>AnimeFinder — Search Anime by Name or Screenshot</title>
 
     <link
         rel="stylesheet"
@@ -75,7 +75,7 @@
       "url":"https://anime.chielzshell.web.id/",
       "applicationCategory":"EntertainmentApplication",
       "operatingSystem":"Any",
-      "description":"Alat pencarian dan identifikasi anime berdasarkan nama atau screenshot adegan.",
+      "description":"Anime search and identification tool by name or scene screenshot.",
       "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
     }
     </script>
@@ -86,9 +86,9 @@
       "@context":"https://schema.org",
       "@type":"FAQPage",
       "mainEntity":[
-        {"@type":"Question","name":"Apakah AnimeFinder merupakan situs streaming anime?","acceptedAnswer":{"@type":"Answer","text":"Tidak. AnimeFinder adalah alat pencarian dan identifikasi anime dan tidak menyediakan file video anime."}},
-        {"@type":"Question","name":"Apakah saya bisa mencari anime hanya dari screenshot?","acceptedAnswer":{"@type":"Answer","text":"Ya. Pengguna dapat mengunggah screenshot yang jelas melalui fitur pencarian gambar."}},
-        {"@type":"Question","name":"Dari mana data anime berasal?","acceptedAnswer":{"@type":"Answer","text":"Informasi katalog berasal dari AniList dan pencarian adegan gambar menggunakan trace.moe."}}
+        {"@type":"Question","name":"Is AnimeFinder an anime streaming site?","acceptedAnswer":{"@type":"Answer","text":"No. AnimeFinder is an anime search and identification tool and does not provide anime video files."}},
+        {"@type":"Question","name":"Can I search for anime from just a screenshot?","acceptedAnswer":{"@type":"Answer","text":"Yes. Users can upload a clear screenshot through the image search feature."}},
+        {"@type":"Question","name":"Where does the anime data come from?","acceptedAnswer":{"@type":"Answer","text":"Catalog information comes from AniList and scene image search uses trace.moe."}}
       ]
     }
     </script>
@@ -118,9 +118,9 @@
         </a>
 
         <nav class="top-nav" aria-label="Navigasi utama">
-            <a href="#how-it-works">Cara Kerja</a>
+            <a href="#how-it-works">How It Works</a>
             <a href="#faq">FAQ</a>
-            <a href="guide.html">Panduan</a>
+            <a href="guide.html">Guide</a>
         </nav>
 
     </header>
@@ -148,9 +148,9 @@
             </h1>
 
             <p>
-                Cari anime favoritmu berdasarkan
-                nama atau upload screenshot dari
-                sebuah adegan.
+                Find your favorite anime by name
+                or by uploading a screenshot
+                of a scene.
             </p>
 
 
@@ -169,7 +169,7 @@
                         data-tab="name"
                         type="button"
                     >
-                      Cari dengan Nama
+                      Search by Name
                     </button>
 
                     <button
@@ -177,7 +177,7 @@
                         data-tab="image"
                         type="button"
                     >
-                      Cari dengan Gambar
+                      Search by Image
                     </button>
 
                 </div>
@@ -202,8 +202,8 @@
                             id="searchInput"
                             type="search"
                             autocomplete="off"
-                            placeholder="Masukkan nama anime..."
-                            aria-label="Nama anime"
+                            placeholder="Enter anime name..."
+                            aria-label="Anime name"
                         >
 
                         <button
@@ -216,7 +216,7 @@
                     </div>
 
                     <p class="search-hint">
-                        Contoh: One Piece, Naruto,
+                        Examples: One Piece, Naruto,
                         Solo Leveling, Jujutsu Kaisen
                     </p>
 
@@ -254,11 +254,11 @@
                             </div>
 
                             <strong>
-                                Upload Screenshot Anime
+                                Upload Anime Screenshot
                             </strong>
 
                             <span>
-                                JPG, PNG, WEBP — maksimal 12 MB
+                                JPG, PNG, WEBP — max 12 MB
                             </span>
 
                         </div>
@@ -278,14 +278,44 @@
                         type="button"
                         disabled
                     >
-                        🔎 Cari Anime dari Gambar
+                        🔎 Find Anime from Image
                     </button>
 
                 </div>
 
             </div>
 
+            <div class="popular-searches" aria-label="Pencarian populer">
+                <span>Popular:</span>
+                <button type="button" class="popular-chip" data-query="One Piece">One Piece</button>
+                <button type="button" class="popular-chip" data-query="Naruto">Naruto</button>
+                <button type="button" class="popular-chip" data-query="Jujutsu Kaisen">Jujutsu Kaisen</button>
+                <button type="button" class="popular-chip" data-query="Solo Leveling">Solo Leveling</button>
+                <button type="button" class="popular-chip" data-query="Frieren">Frieren</button>
+            </div>
+
         </section>
+
+
+        <!-- =================================
+             AD SLOT 1 — below hero
+             TODO: replace data-ad-slot with your ad unit ID
+             from the AdSense dashboard after your account is approved.
+             Or enable Auto Ads and remove these manual slots.
+        ================================== -->
+
+        <div class="ad-container">
+            <span class="ad-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4319137965038163"
+                 data-ad-slot="0000000000"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
 
         <!-- =================================
@@ -304,11 +334,11 @@
             <div class="error-text">
 
                 <strong id="errorTitle">
-                    Terjadi kesalahan
+                    Something went wrong
                 </strong>
 
                 <p id="errorMessage">
-                    Silakan coba lagi.
+                    Please try again.
                 </p>
 
             </div>
@@ -336,7 +366,7 @@
             <div class="spinner"></div>
 
             <p id="loadingText">
-                Memuat...
+                Loading...
             </p>
 
         </div>
@@ -350,36 +380,36 @@
 
         <section class="seo-content" aria-labelledby="about-tool-title">
             <div class="seo-content-inner">
-                <span class="home-eyebrow">Tentang AnimeFinder</span>
-                <h2 id="about-tool-title">Mesin pencari anime untuk menemukan judul yang kamu ingat</h2>
+                <span class="home-eyebrow">About AnimeFinder</span>
+                <h2 id="about-tool-title">An anime search engine for finding titles you remember</h2>
                 <p>
-                    AnimeFinder adalah alat pencarian dan identifikasi anime yang membantu pengguna
-                    menemukan judul berdasarkan nama maupun screenshot sebuah adegan. Situs ini dibuat
-                    untuk situasi ketika kamu mengingat karakter, judul sebagian, atau hanya memiliki
-                    satu gambar dari anime tetapi tidak mengetahui judulnya.
+                    AnimeFinder is an anime search and identification tool that helps users
+                    find titles by name or from a screenshot of a scene. It was built for
+                    those moments when you remember a character, part of a title, or only
+                    have a single image from an anime but don't know its name.
                 </p>
                 <p>
-                    Berbeda dari katalog streaming, AnimeFinder tidak menyediakan atau meng-host video
-                    anime. Fokus layanan ini adalah membantu menemukan informasi anime yang relevan,
-                    seperti judul alternatif, sinopsis, genre, jumlah episode, status tayang, musim,
-                    skor, dan hasil pencocokan adegan. Data katalog ditampilkan dari AniList, sedangkan
-                    pencarian berdasarkan gambar diproses melalui trace.moe.
+                    Unlike streaming catalogs, AnimeFinder does not provide or host anime
+                    videos. This service focuses on helping you find relevant anime information,
+                    such as alternative titles, synopsis, genres, episode counts, airing status,
+                    seasons, scores, and scene-match results. Catalog data comes from AniList, while
+                    image-based searches are processed through trace.moe.
                 </p>
                 <div class="value-grid">
                     <article class="value-card">
                         <span class="value-number">01</span>
-                        <h3>Pencarian nama</h3>
-                        <p>Ketik judul atau kata kunci anime untuk melihat beberapa hasil yang paling relevan.</p>
+                        <h3>Name search</h3>
+                        <p>Type an anime title or keyword to see the most relevant results.</p>
                     </article>
                     <article class="value-card">
                         <span class="value-number">02</span>
-                        <h3>Pencarian screenshot</h3>
-                        <p>Unggah gambar adegan dan gunakan pencocokan visual untuk mempersempit kemungkinan judul.</p>
+                        <h3>Screenshot search</h3>
+                        <p>Upload a scene image and use visual matching to narrow down the likely titles.</p>
                     </article>
                     <article class="value-card">
                         <span class="value-number">03</span>
-                        <h3>Detail yang mudah dibaca</h3>
-                        <p>Buka kartu anime untuk melihat informasi penting tanpa harus mencari ulang di banyak halaman.</p>
+                        <h3>Easy-to-read details</h3>
+                        <p>Open an anime card to see key information without hunting across many pages.</p>
                     </article>
                 </div>
             </div>
@@ -387,35 +417,35 @@
 
         <section class="seo-content seo-content-alt" id="how-it-works" aria-labelledby="how-title">
             <div class="seo-content-inner">
-                <span class="home-eyebrow">Cara Kerja</span>
-                <h2 id="how-title">Bagaimana AnimeFinder menemukan anime?</h2>
+                <span class="home-eyebrow">How It Works</span>
+                <h2 id="how-title">How does AnimeFinder find anime?</h2>
                 <div class="steps-grid">
                     <article class="step-card">
                         <span class="step-number">1</span>
                         <div>
-                            <h3>Pilih metode pencarian</h3>
-                            <p>Gunakan pencarian nama jika kamu mengetahui judul atau kata kuncinya. Gunakan pencarian gambar jika yang kamu punya adalah screenshot adegan.</p>
+                            <h3>Pick a search method</h3>
+                            <p>Use name search if you know the title or a keyword. Use image search if all you have is a screenshot of a scene.</p>
                         </div>
                     </article>
                     <article class="step-card">
                         <span class="step-number">2</span>
                         <div>
-                            <h3>Permintaan diproses</h3>
-                            <p>Pencarian nama dikirim ke AniList. Screenshot dikirim ke layanan trace.moe untuk mendapatkan kecocokan adegan dan perkiraan sumber anime.</p>
+                            <h3>Your request is processed</h3>
+                            <p>Name searches go to AniList. Screenshots go to trace.moe to find scene matches and the likely source anime.</p>
                         </div>
                     </article>
                     <article class="step-card">
                         <span class="step-number">3</span>
                         <div>
-                            <h3>Periksa hasil</h3>
-                            <p>Bandingkan judul, gambar, genre, episode, musim, status, dan informasi lain sebelum membuka detail anime.</p>
+                            <h3>Review the results</h3>
+                            <p>Compare titles, images, genres, episodes, seasons, status, and more before opening an anime's details.</p>
                         </div>
                     </article>
                 </div>
                 <div class="note-box">
-                    <strong>Tips pencarian gambar:</strong>
-                    gunakan screenshot yang menampilkan karakter atau latar dengan jelas, hindari gambar
-                    yang terlalu kecil atau tertutup teks, dan coba screenshot lain jika hasil pertama tidak sesuai.
+                    <strong>Image search tips:</strong>
+                    use a screenshot that clearly shows a character or background, avoid images
+                    that are too small or covered in text, and try another screenshot if the first result misses.
                 </div>
             </div>
         </section>
@@ -423,56 +453,56 @@
         <section class="seo-content" aria-labelledby="data-title">
             <div class="seo-content-inner two-column-content">
                 <div>
-                    <span class="home-eyebrow">Memahami Hasil</span>
-                    <h2 id="data-title">Informasi apa yang tersedia?</h2>
+                    <span class="home-eyebrow">Understanding Results</span>
+                    <h2 id="data-title">What information is available?</h2>
                     <p>
-                        Setiap anime dapat memiliki lebih dari satu judul. AnimeFinder menampilkan judul
-                        romaji, Inggris, atau judul asli yang tersedia agar pengguna dapat mengenali seri
-                        yang dicari meskipun nama yang diingat berbeda.
+                        Every anime can have more than one title. AnimeFinder shows the available
+                        romaji, English, or native titles so you can recognize the series
+                        you're looking for even if the name you remember is different.
                     </p>
                     <p>
-                        Kartu hasil juga dapat menampilkan tahun, jumlah episode, format, genre, status,
-                        dan skor. Nilai tersebut berasal dari data layanan pihak ketiga dan dapat berubah
-                        ketika sumber memperbarui katalognya.
+                        Result cards can also show the year, episode count, format, genres, status,
+                        and score. These values come from third-party services and may change
+                        when the source updates its catalog.
                     </p>
                 </div>
                 <div class="info-list">
-                    <div><strong>Format</strong><span>TV, Movie, OVA, ONA, Special, dan format lain yang tersedia.</span></div>
-                    <div><strong>Status</strong><span>Contohnya Finished Airing, Currently Airing, atau Not Yet Released.</span></div>
-                    <div><strong>Genre</strong><span>Kategori seperti Action, Comedy, Drama, Fantasy, Romance, dan lainnya.</span></div>
-                    <div><strong>Score</strong><span>Skor komunitas yang tersedia dari katalog AniList, bukan penilaian buatan AnimeFinder.</span></div>
+                    <div><strong>Format</strong><span>TV, Movie, OVA, ONA, Special, and other available formats.</span></div>
+                    <div><strong>Status</strong><span>For example Finished Airing, Currently Airing, or Not Yet Released.</span></div>
+                    <div><strong>Genre</strong><span>Categories like Action, Comedy, Drama, Fantasy, Romance, and more.</span></div>
+                    <div><strong>Score</strong><span>Community scores available from the AniList catalog, not AnimeFinder's own ratings.</span></div>
                 </div>
             </div>
         </section>
 
         <section class="seo-content seo-content-alt" id="faq" aria-labelledby="faq-title">
             <div class="seo-content-inner">
-                <span class="home-eyebrow">Pertanyaan Umum</span>
-                <h2 id="faq-title">FAQ AnimeFinder</h2>
+                <span class="home-eyebrow">FAQ</span>
+                <h2 id="faq-title">AnimeFinder FAQ</h2>
                 <div class="faq-list">
                     <details>
-                        <summary>Apakah AnimeFinder merupakan situs streaming anime?</summary>
-                        <p>Tidak. AnimeFinder adalah alat pencarian dan identifikasi anime. Situs ini tidak menyediakan file video anime untuk ditonton atau diunduh.</p>
+                        <summary>Is AnimeFinder an anime streaming site?</summary>
+                        <p>No. AnimeFinder is an anime search and identification tool. This site does not provide anime video files to watch or download.</p>
                     </details>
                     <details>
-                        <summary>Apakah saya bisa mencari anime hanya dari screenshot?</summary>
-                        <p>Ya. Pilih tab Cari dengan Gambar, unggah screenshot yang jelas, lalu jalankan pencarian gambar. Hasil bergantung pada kemampuan pencocokan layanan trace.moe.</p>
+                        <summary>Can I search for anime from just a screenshot?</summary>
+                        <p>Yes. Pick the Search by Image tab, upload a clear screenshot, then run the image search. Results depend on trace.moe's matching ability.</p>
                     </details>
                     <details>
-                        <summary>Dari mana data anime berasal?</summary>
-                        <p>Informasi katalog anime berasal dari AniList. Pencarian adegan berdasarkan gambar menggunakan trace.moe. AnimeFinder menggabungkan hasil tersebut ke dalam antarmuka pencarian.</p>
+                        <summary>Where does the anime data come from?</summary>
+                        <p>Anime catalog information comes from AniList. Scene search by image uses trace.moe. AnimeFinder combines these into one search interface.</p>
                     </details>
                     <details>
-                        <summary>Mengapa hasil pencarian gambar bisa salah?</summary>
-                        <p>Pencarian gambar adalah pencocokan visual. Screenshot yang buram, terpotong, terlalu kecil, atau tidak berasal dari adegan yang dikenali dapat menghasilkan kecocokan yang kurang tepat.</p>
+                        <summary>Why can image search results be wrong?</summary>
+                        <p>Image search is visual matching. Blurry, cropped, or tiny screenshots — or ones not from a recognized scene — can produce inaccurate matches.</p>
                     </details>
                     <details>
-                        <summary>Apakah AnimeFinder gratis?</summary>
-                        <p>Fitur pencarian yang tersedia di situs dapat digunakan tanpa biaya. Ketersediaan layanan tetap bergantung pada layanan API pihak ketiga yang digunakan untuk memproses permintaan.</p>
+                        <summary>Is AnimeFinder free?</summary>
+                        <p>The search features on this site are free to use. Availability still depends on the third-party API services used to process requests.</p>
                     </details>
                     <details>
-                        <summary>Apakah screenshot saya disimpan oleh AnimeFinder?</summary>
-                        <p>AnimeFinder tidak menyediakan penyimpanan galeri screenshot pengguna. Gambar untuk pencarian dikirim ke layanan pencocokan pihak ketiga sebagaimana dijelaskan dalam Kebijakan Privasi.</p>
+                        <summary>Does AnimeFinder store my screenshots?</summary>
+                        <p>AnimeFinder does not store a gallery of user screenshots. Search images are sent to a third-party matching service as described in the Privacy Policy.</p>
                     </details>
                 </div>
             </div>
@@ -480,24 +510,44 @@
 
         <section class="seo-content" aria-labelledby="source-title">
             <div class="seo-content-inner source-section">
-                <span class="home-eyebrow">Sumber &amp; Transparansi</span>
-                <h2 id="source-title">Sumber data AnimeFinder</h2>
+                <span class="home-eyebrow">Sources &amp; Transparency</span>
+                <h2 id="source-title">AnimeFinder's data sources</h2>
                 <p>
-                    AnimeFinder tidak mengklaim kepemilikan atas data katalog, poster, judul, atau materi
-                    anime yang ditampilkan. Layanan ini menggunakan sumber pihak ketiga untuk membantu
-                    pengguna menemukan informasi dan mengidentifikasi adegan.
+                    AnimeFinder does not claim ownership of the catalog data, posters, titles, or anime
+                    material shown. This service uses third-party sources to help
+                    users find information and identify scenes.
                 </p>
                 <div class="source-links">
-                    <a href="https://anilist.co/" target="_blank" rel="noopener noreferrer"><strong>AniList</strong><span>Database anime dan informasi katalog.</span></a>
-                    <a href="https://trace.moe/" target="_blank" rel="noopener noreferrer"><strong>trace.moe</strong><span>Pencarian anime berdasarkan screenshot adegan.</span></a>
+                    <a href="https://anilist.co/" target="_blank" rel="noopener noreferrer"><strong>AniList</strong><span>Anime database and catalog information.</span></a>
+                    <a href="https://trace.moe/" target="_blank" rel="noopener noreferrer"><strong>trace.moe</strong><span>Anime search by scene screenshot.</span></a>
                 </div>
                 <p class="small-note">
-                    Jika informasi pada hasil berbeda dari sumber aslinya, pengguna dapat memeriksa sumber
-                    terkait karena data pihak ketiga dapat diperbarui atau berubah dari waktu ke waktu.
+                    If the information in the results differs from the original source, check the
+                    linked source — third-party data can be updated or change over time.
                 </p>
-                <a class="guide-link" href="guide.html">Baca panduan lengkap menggunakan AnimeFinder →</a>
+                <a class="guide-link" href="guide.html">Read the full AnimeFinder guide →</a>
             </div>
         </section>
+
+
+        <!-- =================================
+             AD SLOT 2 — after informational content
+             TODO: replace data-ad-slot with your ad unit ID
+             from the AdSense dashboard after your account is approved.
+        ================================== -->
+
+        <div class="ad-container">
+            <span class="ad-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4319137965038163"
+                 data-ad-slot="0000000000"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
 
         <!-- =================================
@@ -524,7 +574,7 @@
                 </div>
 
                 <span class="home-description">
-                    Anime yang sedang populer sekarang
+                    Anime trending right now
                 </span>
 
             </div>
@@ -540,7 +590,7 @@
                     <div class="mini-spinner"></div>
 
                     <span>
-                        Memuat anime...
+                        Loading anime...
                     </span>
 
                 </div>
@@ -574,7 +624,7 @@
                 </div>
 
                 <span class="home-description">
-                    Pilihan anime paling banyak diminati
+                    The most in-demand anime picks
                 </span>
 
             </div>
@@ -590,7 +640,7 @@
                     <div class="mini-spinner"></div>
 
                     <span>
-                        Memuat anime...
+                        Loading anime...
                     </span>
 
                 </div>
@@ -624,7 +674,7 @@
                 </div>
 
                 <span class="home-description">
-                    Update anime terbaru
+                    The latest anime updates
                 </span>
 
             </div>
@@ -640,7 +690,7 @@
                     <div class="mini-spinner"></div>
 
                     <span>
-                        Memuat anime...
+                        Loading anime...
                     </span>
 
                 </div>
@@ -658,7 +708,7 @@
             id="homeError"
             class="home-error hidden"
         >
-            Gagal memuat daftar anime.
+            Failed to load the anime list.
         </div>
 
 
@@ -683,7 +733,7 @@
                     </span>
 
                     <h2 id="resultTitle">
-                        Hasil pencarian
+                        Search results
                     </h2>
 
                 </div>
@@ -724,7 +774,7 @@
                     </span>
 
                     <h2>
-                        Anime yang ditemukan
+                        Anime found
                     </h2>
 
                 </div>
@@ -733,7 +783,7 @@
                     id="traceResultCount"
                     class="result-count"
                 >
-                    Hasil screenshot
+                    Screenshot results
                 </span>
 
             </div>
@@ -761,13 +811,13 @@
             </div>
 
             <h2>
-                Anime tidak ditemukan
+                No anime found
             </h2>
 
             <p>
-                Coba gunakan nama anime lain
-                atau upload screenshot yang
-                lebih jelas.
+                Try another anime name
+                or upload a clearer
+                screenshot.
             </p>
 
         </section>
@@ -795,14 +845,14 @@
             class="modal-card"
             role="dialog"
             aria-modal="true"
-            aria-label="Anime Detail"
+            aria-label="Anime Details"
         >
 
             <button
                 id="modalClose"
                 class="modal-close"
                 type="button"
-                aria-label="Tutup detail"
+                aria-label="Close details"
             >
                 ×
             </button>
@@ -843,6 +893,29 @@
         </nav>
 
     </footer>
+
+
+    <!-- =====================================
+         COOKIE CONSENT
+    ====================================== -->
+
+    <div
+        id="cookieBanner"
+        class="cookie-banner hidden"
+        role="dialog"
+        aria-label="Persetujuan cookie"
+    >
+        <p>
+            AnimeFinder uses cookies for analytics and ads
+            (Google AdSense). By clicking "Accept", you agree to
+            cookie use as described in the
+            <a href="privacy.html">Privacy Policy</a>.
+        </p>
+        <div class="cookie-actions">
+            <button id="cookieAccept" class="cookie-accept" type="button">Accept</button>
+            <button id="cookieDecline" class="cookie-decline" type="button">Decline</button>
+        </div>
+    </div>
 
 
     <!-- =====================================
